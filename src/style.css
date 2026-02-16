@@ -1,1 +1,161 @@
 @import "tailwindcss";
+
+:root {
+  --color-black-50: hsl(240, 2%, 10%);
+  --color-black-100: hsl(240, 3%, 15%);
+  --color-black-200: hsl(240, 4%, 20%);
+
+  --color-white-50: hsl(0, 0%, 100%);
+  --color-white-100: hsl(0, 0%, 95%);
+  --color-white-200: hsl(0, 0%, 90%);
+
+  --color-blue-50: hsl(210, 100%, 45%);
+  --color-blue-100: hsl(210, 100%, 50%);
+  --color-blue-200: hsl(210, 100%, 55%);
+
+  --color-gray-50: hsl(240, 2%, 45%);
+  --color-gray-100: hsl(240, 2%, 50%);
+  --color-gray-200: hsl(240, 2%, 55%);
+
+  --color-orange-50: hsl(23, 100%, 40%);
+  --color-orange-100: hsl(23, 100%, 45%);
+  --color-orange-200: hsl(23, 100%, 50%);
+
+  /* spacing */
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-s: 0.75rem;
+  --space-base: 1rem;
+  --space-lg: 1.25rem;
+  --space-xl: 1.5rem;
+  --space-2xl: 2rem;
+
+  /* font size */
+  --fs-s: 0.75rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: 1.75rem;
+  --fs-3xl: 2rem;
+  --fs-4xl: 2.5rem;
+  --fs-5xl: 3rem;
+
+  /* box shadow */
+  --box-shadow: 2px 4px 12px hsla(0, 0%, 0%, 0.2);
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src: url("./fonts/SF-Pro-Display-Regular.otf") format("opentype");
+}
+
+* {
+  font-family:
+    "SF Pro",
+    "SF Pro Text",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: calc(1em + 0.5rem);
+}
+
+@theme {
+  /* colors */
+  --color-black-50: var(--color-black-50);
+  --color-black-100: var(--color-black-100);
+  --color-black-200: var(--color-black-200);
+
+  --color-white-50: var(--color-white-50);
+  --color-white-100: var(--color-white-100);
+  --color-white-200: var(--color-white-200);
+
+  --color-blue-50: var(--color-blue-50);
+  --color-blue-100: var(--color-blue-100);
+  --color-blue-200: var(--color-blue-200);
+
+  --color-gray-50: var(--color-gray-50);
+  --color-gray-100: var(--color-gray-100);
+  --color-gray-200: var(--color-gray-200);
+
+  --color-orange-50: var(--color-orange-50);
+  --color-orange-100: var(--color-orange-100);
+  --color-orange-200: var(--color-orange-200);
+
+  /* box shadow */
+  --shadow-my-shadow: var(--box-shadow);
+
+  /* font size */
+  --text-fs-s: var(--fs-s);
+  --text-fs-base: var(--fs-base);
+  --text-fs-lg: var(--fs-lg);
+  --text-fs-xl: var(--fs-xl);
+  --text-fs-2xl: var(--fs-2xl);
+  --text-fs-3xl: var(--fs-3xl);
+  --text-fs-4xl: var(--fs-4xl);
+  --text-fs-5xl: var(--fs-5xl);
+
+  /* spacing */
+  --spacing-space-xxs: var(--space-xxs);
+  --spacing-space-xs: var(--space-xs);
+  --spacing-space-s: var(--space-s);
+  --spacing-space-base: var(--space-base);
+  --spacing-space-lg: var(--space-lg);
+  --spacing-space-xl: var(--space-xl);
+  --spacing-space-2xl: var(--space-2xl);
+
+  /* breakpoints */
+  --breakpoint-xs: 475px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+}
+
+/* container */
+@layer components {
+  .container {
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
+
+  @media (min-width: 475px) {
+    .container {
+      max-width: 475px;
+    }
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1200px;
+    }
+  }
+}

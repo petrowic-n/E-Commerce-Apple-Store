@@ -39,6 +39,7 @@
   --fs-3xl: 2rem;
   --fs-4xl: 2.5rem;
   --fs-5xl: 3rem;
+  --fs-6xl: 4rem;
 
   /* box shadow */
   --box-shadow: 2px 4px 12px hsla(0, 0%, 0%, 0.2);
@@ -102,6 +103,7 @@ body {
   --text-fs-3xl: var(--fs-3xl);
   --text-fs-4xl: var(--fs-4xl);
   --text-fs-5xl: var(--fs-5xl);
+  --text-fs-6xl: var(--fs-6xl);
 
   /* spacing */
   --spacing-space-xxs: var(--space-xxs);
@@ -158,4 +160,42 @@ body {
       max-width: 1200px;
     }
   }
+}
+
+.primary-btn {
+  padding-inline: var(--space-base);
+  padding-block: 8px;
+  color: var(--color-white-50);
+  font-size: var(--fs-base);
+  letter-spacing: -0.22px;
+  border-radius: 18px;
+  background-color: var(--color-blue-50);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: var(--color-blue-100);
+  box-shadow: var(--shadow-my-shadow);
+  transform: scale(1.03);
+}
+
+.secondary-btn {
+  padding-inline: var(--space-base);
+  padding-block: 8px;
+  color: var(--color-blue-50);
+  font-size: var(--fs-base);
+  letter-spacing: -0.22px;
+  border-radius: 18px;
+  background-color: transparent;
+  border: 1px solid var(--color-blue-50);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background-color: var(--color-blue-50);
+  box-shadow: var(--shadow-my-shadow);
+  color: var(--color-white-50);
+  transform: scale(1.03);
 }

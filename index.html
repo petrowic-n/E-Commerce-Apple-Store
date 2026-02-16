@@ -10,8 +10,137 @@
     <!-- JS -->
     <script type="module" defer src="/src/main.js"></script>
   </head>
-  <body>
-    <header></header>
+  <body class="bg-white-100">
+    <!-- Header -->
+    <header
+      class="bg-white-200 fixed right-0 left-0 w-full z-999 py-space-base shadow-my-shadow"
+    >
+      <div class="container flex justify-between">
+        <!-- Logo -->
+        <a href="#home">
+          <img src="/apple-logo.svg" alt="logo" />
+        </a>
+
+        <nav class="hidden sm:block" aria-label="Header navigation ">
+          <ul class="flex items-center gap-space-2xl">
+            <li>
+              <a
+                class="text-black-100 text-fs-base font-semibold hover:text-gray-100 transition-all duration-200 ease-in"
+                href="#iPhone"
+                >iPhone</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-black-100 text-fs-base font-semibold hover:text-gray-100 transition-all duration-200 ease-in"
+                href="#iPad"
+                >iPad</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-black-100 text-fs-base font-semibold hover:text-gray-100 transition-all duration-200 ease-in"
+                href="#MacBook"
+                >Mac Book</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-black-100 text-fs-base font-semibold hover:text-gray-100 transition-all duration-200 ease-in"
+                href="#AirPods"
+                >Air Pods</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <div class="flex items-center gap-space-base">
+          <svg
+            aria-label="Mobile Menu button"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            id="open-menu"
+            class="fill-black-50 cursor-pointer md:hidden"
+            fill="currentColor"
+            width="32"
+            height="32"
+          >
+            <path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z"></path>
+          </svg>
+
+          <!-- Shopping Cart -->
+          <a class="cursor-pointer" id="shop-bag" aria-label="Shopping bag">
+            <img src="/shop-bag.svg" alt="Shopping bag" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- end of Header -->
+
+    <!-- Mobile Navigation -->
+    <div
+      id="mobile-nav"
+      class="pt-30 px-6 bg-white-50 fixed right-0 top-0 bottom-0 h-full z-9999 transform translate-x-full transition-transform duration-300 ease-in-out"
+    >
+      <div class="relative">
+        <nav class="block" aria-label="Mobile navigation">
+          <ul
+            class="flex flex-col items-center justify-center gap-space-2xl p-space-lg h-full"
+          >
+            <li>
+              <a
+                id="mobile-nav-link"
+                class="text-black-100 text-fs-2xl font-semibold hover:text-gray-100 transition-all duration-200 ease-in"
+                href="#iPhone"
+                >iPhone</a
+              >
+            </li>
+            <li>
+              <a
+                id="mobile-nav-link"
+                class="text-black-100 text-fs-2xl font-semibold hover:text-gray-100 transition-all duration-200 ease-in"
+                href="#iPad"
+                >iPad</a
+              >
+            </li>
+            <li>
+              <a
+                id="mobile-nav-link"
+                class="text-black-100 text-fs-2xl font-semibold hover:text-gray-100 transition-all duration-200 ease-in"
+                href="#MacBook"
+                >Mac Book</a
+              >
+            </li>
+            <li>
+              <a
+                id="mobile-nav-link"
+                class="text-black-100 text-fs-2xl font-semibold hover:text-gray-100 transition-all duration-200 ease-in"
+                href="#AirPods"
+                >Air Pods</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- Close menu button -->
+        <svg
+          aria-label="Close menu button"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          id="close-menu"
+          class="fill-black-50 absolute -top-25 right-0 cursor-pointer"
+          fill="currentColor"
+          height="32"
+          width="32"
+        >
+          <path
+            d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"
+          ></path>
+        </svg>
+      </div>
+    </div>
+    <!-- End of Mobile Navigation -->
     <main></main>
+    <footer></footer>
   </body>
 </html>

@@ -30,7 +30,7 @@ const renderProducts = () => {
             </div>
 
             <figure>
-                <img src="${product.image}" alt="${product.name}" />
+                <img src="public${product.image}" alt="${product.name}" />
             </figure>
             <div class="flex items-center justify-between w-full">
                 <span class="text-fs-lg text-black-100 font-semibold"><span class="text-black-200 text-fs-base mr-1.5 font-medium">from</span>$${product.price}</span>

@@ -15,7 +15,7 @@ const mobileNav = () => {
   });
 
   mobileLinks.forEach((link) => {
-    link.addEventListener("click", () => {
+    link.addEventListener("click", (e) => {
       mobileNavContainer.classList.remove("translate-x-full");
     });
   });

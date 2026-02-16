@@ -40,15 +40,15 @@
             <li>
               <a
                 class="text-black-100 text-fs-base font-semibold hover:text-gray-100 transition-all duration-200 ease-in"
-                href="#MacBook"
-                >Mac Book</a
+                href="#AirPods"
+                >AirPods</a
               >
             </li>
             <li>
               <a
                 class="text-black-100 text-fs-base font-semibold hover:text-gray-100 transition-all duration-200 ease-in"
-                href="#AirPods"
-                >Air Pods</a
+                href="#Watches"
+                >Watches</a
               >
             </li>
           </ul>
@@ -81,7 +81,7 @@
     <!-- Mobile Navigation -->
     <div
       id="mobile-nav"
-      class="pt-30 px-6 bg-white-50 fixed right-0 top-0 bottom-0 h-full z-9999 transform translate-x-full transition-transform duration-300 ease-in-out"
+      class="pt-30 shadow-my-shadow px-6 bg-white-50 fixed right-0 top-0 bottom-0 h-full z-9999 transform translate-x-full transition-transform duration-300 ease-in-out"
     >
       <div class="relative">
         <nav class="block" aria-label="Mobile navigation">
@@ -108,16 +108,16 @@
               <a
                 id="mobile-nav-link"
                 class="text-black-100 text-fs-2xl font-semibold hover:text-gray-100 transition-all duration-200 ease-in"
-                href="#MacBook"
-                >Mac Book</a
+                href="#AirPods"
+                >AirPods</a
               >
             </li>
             <li>
               <a
                 id="mobile-nav-link"
                 class="text-black-100 text-fs-2xl font-semibold hover:text-gray-100 transition-all duration-200 ease-in"
-                href="#AirPods"
-                >Air Pods</a
+                href="#Watches"
+                >Watches</a
               >
             </li>
           </ul>
@@ -142,22 +142,103 @@
     <!-- End of Mobile Navigation -->
     <main>
       <!-- Hero Section -->
-      <section id="home" class="min-h-screen flex flex-col items-center justify-center gap-space-2xl">
+      <section
+        id="home"
+        class="min-h-screen flex flex-col items-center justify-center gap-space-2xl"
+      >
         <div class="container flex flex-col items-center justify-center">
-          <h1 class="text-black-50 text-center font-bold md:text-[5rem] sm:text-fs-6xl text-fs-5xl tracking-[-1.2px] leading-none mb-space-lg">Shop Apple Products</h1>
-          <p class="text-black-100 md:text-fs-lg text-fs-base tracking-[-0.37px]">Say hello to latest generation of apple products.</p>
+          <h1
+            class="text-black-50 text-center font-bold md:text-[5rem] sm:text-fs-6xl text-fs-5xl tracking-[-1.2px] leading-none mb-space-lg"
+          >
+            Shop Apple Products
+          </h1>
+          <p
+            class="text-black-100 md:text-fs-lg text-fs-base tracking-[-0.37px]"
+          >
+            Say hello to latest generation of apple products.
+          </p>
         </div>
         <div class="flex items-center gap-space-base">
           <button class="primary-btn">Learn more</button>
           <button class="secondary-btn">Shop now</button>
         </div>
         <div>
-          <img src="/hero-img.svg" alt="">
+          <img src="/hero-img.svg" alt="" />
         </div>
       </section>
       <!-- end of Hero Section -->
 
-      
+      <!-- iPhones Section -->
+      <section id="iPhone">
+        <div class="container">
+          <h2
+            class="text-black-50 md:text-fs-4xl text-fs-3xl font-bold tracking-[-1.2px]"
+          >
+            iPhones.<span class="text-gray-50 ml-1.5">Take your pick.</span>
+          </h2>
+
+          <!-- Grid System -->
+          <div
+            id="iphones-grid"
+            class="grid lg:grid-cols-4 sm:grid-cols-2 mt-space-2xl gap-space-xl"
+          ></div>
+        </div>
+      </section>
+      <!-- end of iphones section -->
+
+      <!-- iPad Section -->
+      <section id="iPad" class="mt-25">
+        <div class="container">
+          <h2
+            class="text-black-50 md:text-fs-4xl text-fs-3xl font-bold tracking-[-1.2px]"
+          >
+            iPads.<span class="text-gray-50 ml-1.5">Pick your power.</span>
+          </h2>
+
+          <!-- Grid System -->
+          <div
+            id="ipad-grid"
+            class="grid lg:grid-cols-4 sm:grid-cols-2 mt-space-2xl gap-space-xl"
+          ></div>
+        </div>
+      </section>
+      <!-- end of iPad section -->
+
+      <!-- AirPods Section -->
+      <section id="AirPods" class="mt-25">
+        <div class="container">
+          <h2
+            class="text-black-50 md:text-fs-4xl text-fs-3xl font-bold tracking-[-1.2px]"
+          >
+            AirPods.<span class="text-gray-50 ml-1.5">Hear the difference.</span>
+          </h2>
+
+          <!-- Grid System -->
+          <div
+            id="airpods-grid"
+            class="grid lg:grid-cols-4 sm:grid-cols-2 mt-space-2xl gap-space-xl"
+          ></div>
+        </div>
+      </section>
+      <!-- end of AirPods section -->
+
+       <!-- Apple Watch Section -->
+      <section id="Watches" class="mt-25">
+        <div class="container">
+          <h2
+            class="text-black-50 md:text-fs-4xl text-fs-3xl font-bold tracking-[-1.2px]"
+          >
+            Apple Watch.<span class="text-gray-50 ml-1.5">Wear your future.</span>
+          </h2>
+
+          <!-- Grid System -->
+          <div
+            id="watches-grid"
+            class="grid lg:grid-cols-4 sm:grid-cols-2 mt-space-2xl gap-space-xl"
+          ></div>
+        </div>
+      </section>
+      <!-- end of Apple Watch section -->
     </main>
     <footer></footer>
   </body>

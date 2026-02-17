@@ -277,7 +277,7 @@
 
     <div
       id="checkout-page"
-      class="hidden bg-white-50 fixed bottom-0 right-0 top-0 left-0 z-99999 md:max-w-150 max-w-100 w-full mx-auto my-20 p-space-2xl rounded-[18px] shadow-my-shadow"
+      class="hidden bg-white-50 fixed right-0 top-0 left-0 z-99999 md:max-w-150 max-w-100 w-full mx-auto my-20 p-space-xl rounded-[18px] shadow-my-shadow"
     >
       <form class="container relative">
         <a href="#home">
@@ -293,15 +293,15 @@
           Choose your method of payment
         </p>
 
-        <div class="mt-space-2xl border-b border-white-200">
+        <div class="mt-space-xl border-b border-white-200 grid grid-cols-2 gap-space-base">
           <!-- Input credit card -->
-          <div class="flex flex-col mb-space-2xl">
+          <div class="flex flex-col mb-space-xl ">
             <label for="card-number" class="text-black-100 text-fs-base"
               >Credit card number</label
             >
             <input
-              class="border-0 bg-white-200 rounded-[18px] px-space-base py-2 outline-blue-200 text-dark-50 w-full mt-2"
-              type="text"
+              class="border-0 bg-white-200 rounded-[18px] px-space-base py-2 outline-blue-200 text-dark-50 text-fs-base w-full mt-2"
+              type="number"
               name="card-number"
               placeholder="1234 5678 9101 2345"
               required
@@ -309,7 +309,7 @@
           </div>
 
           <!-- Input expiration date -->
-          <div class="flex flex-col mb-space-2xl">
+          <div class="flex flex-col mb-space-base">
             <label for="card-number" class="text-black-100 text-fs-base"
               >Expiration date</label
             >
@@ -323,7 +323,7 @@
           </div>
 
           <!-- Input security code -->
-          <div class="flex flex-col mb-space-2xl">
+          <div class="flex flex-col mb-space-base">
             <label for="card-number" class="text-black-100 text-fs-base"
               >Security code</label
             >
@@ -337,7 +337,7 @@
           </div>
 
           <!-- Input security code -->
-          <div class="flex flex-col mb-space-2xl">
+          <div class="flex flex-col mb-space-base">
             <label for="card-number" class="text-black-100 text-fs-base"
               >Postal code</label
             >
@@ -350,7 +350,7 @@
             />
           </div>
         </div>
-        <div class="mt-space-2xl flex items-center justify-between">
+        <div class="mt-space-lg flex items-center justify-between">
           <button type="submit" class="primary-btn">Proceed payment</button>
           <div>
             <span class="text-gray-50">Total:</span>

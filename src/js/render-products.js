@@ -32,7 +32,7 @@ const renderProducts = () => {
             </div>
 
             <figure>
-                <img src="public${product.image}" alt="${product.name}" />
+                <img src="${product.image}" alt="${product.name}" />
             </figure>
             <div class="flex items-center justify-between w-full">
             <div>

@@ -210,7 +210,9 @@
           <h2
             class="text-black-50 md:text-fs-4xl text-fs-3xl font-bold tracking-[-1.2px]"
           >
-            AirPods.<span class="text-gray-50 ml-1.5">Hear the difference.</span>
+            AirPods.<span class="text-gray-50 ml-1.5"
+              >Hear the difference.</span
+            >
           </h2>
 
           <!-- Grid System -->
@@ -222,13 +224,15 @@
       </section>
       <!-- end of AirPods section -->
 
-       <!-- Apple Watch Section -->
+      <!-- Apple Watch Section -->
       <section id="Watches" class="mt-25">
         <div class="container">
           <h2
             class="text-black-50 md:text-fs-4xl text-fs-3xl font-bold tracking-[-1.2px]"
           >
-            Apple Watch.<span class="text-gray-50 ml-1.5">Wear your future.</span>
+            Apple Watch.<span class="text-gray-50 ml-1.5"
+              >Wear your future.</span
+            >
           </h2>
 
           <!-- Grid System -->
@@ -240,6 +244,34 @@
       </section>
       <!-- end of Apple Watch section -->
     </main>
+
+    <div
+      id="shopping-cart"
+      class="pt-30 shadow-my-shadow px-6 bg-white-50 fixed right-0 top-0 bottom-0 h-full z-9999 transform translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto"
+    >
+      <div class="relative">
+        <div id="shopping-cart-list"></div>
+        <!-- Close menu button -->
+        <svg
+          aria-label="Close menu button"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          id="close-menu"
+          class="fill-black-50 absolute -top-25 right-0 cursor-pointer"
+          fill="currentColor"
+          height="32"
+          width="32"
+        >
+          <path
+            d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"
+          ></path>
+        </svg>
+      </div>
+      <span class="block mt-space-2xl text-base text-gray-100"
+        >Total: <span id="total-price" class="text-black-50">$1000</span></span
+      >
+      <button class="primary-btn mt-space-lg block">Checkout</button>
+    </div>
     <footer></footer>
   </body>
 </html>

@@ -1,22 +1,39 @@
-"use strict";
-
 const mobileNav = () => {
-  const closeMenuBtn = document.getElementById("close-menu");
+  const closeMenuBtn = document.querySelectorAll("#close-menu");
   const openMenuBtn = document.getElementById("open-menu");
   const mobileNavContainer = document.getElementById("mobile-nav");
   const mobileLinks = document.querySelectorAll("#mobile-nav-link");
+  const shoppBagBtn = document.getElementById("shop-bag");
+  const shoppingCartContainer = document.getElementById("shopping-cart");
+  
 
-  openMenuBtn.addEventListener("click", () => {
-    mobileNavContainer.classList.remove("translate-x-full");
-  });
+  const removeContainer = function (container) {
+    container.classList.add("translate-x-full");
+  };
 
-  closeMenuBtn.addEventListener("click", () => {
-    mobileNavContainer.classList.add("translate-x-full");
+  const showContainer = function (container) {
+    container.classList.remove("translate-x-full");
+  };
+
+
+  openMenuBtn.addEventListener("click", () =>
+    showContainer(mobileNavContainer),
+  );
+
+  shoppBagBtn.addEventListener("click", () =>
+    showContainer(shoppingCartContainer),
+  );
+
+  closeMenuBtn.forEach((icon) => {
+    icon.addEventListener("click", () => {
+      removeContainer(mobileNavContainer);
+      removeContainer(shoppingCartContainer);
+    });
   });
 
   mobileLinks.forEach((link) => {
-    link.addEventListener("click", (e) => {
-      mobileNavContainer.classList.remove("translate-x-full");
+    link.addEventListener("click", () => {
+      mobileNavContainer.classList.add("translate-x-full");
     });
   });
 };

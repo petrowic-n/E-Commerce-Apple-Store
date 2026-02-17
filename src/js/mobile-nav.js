@@ -5,6 +5,8 @@ const mobileNav = () => {
   const mobileLinks = document.querySelectorAll("#mobile-nav-link");
   const shoppBagBtn = document.getElementById("shop-bag");
   const shoppingCartContainer = document.getElementById("shopping-cart");
+  const checkoutPage = document.getElementById("checkout-page");
+  
   
 
   const removeContainer = function (container) {
@@ -15,7 +17,6 @@ const mobileNav = () => {
     container.classList.remove("translate-x-full");
   };
 
-
   openMenuBtn.addEventListener("click", () =>
     showContainer(mobileNavContainer),
   );
@@ -23,11 +24,13 @@ const mobileNav = () => {
   shoppBagBtn.addEventListener("click", () =>
     showContainer(shoppingCartContainer),
   );
+ 
 
   closeMenuBtn.forEach((icon) => {
     icon.addEventListener("click", () => {
       removeContainer(mobileNavContainer);
       removeContainer(shoppingCartContainer);
+      checkoutPage.classList.add("hidden");
     });
   });
 

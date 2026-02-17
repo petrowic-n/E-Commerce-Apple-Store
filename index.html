@@ -159,8 +159,8 @@
           </p>
         </div>
         <div class="flex items-center gap-space-base">
-          <button class="primary-btn">Learn more</button>
-          <button class="secondary-btn">Shop now</button>
+          <button class="primary-btn"><a href="#iPhone">Learn more</a></button>
+          <button class="secondary-btn"><a href="#iPhone">Shop now</a></button>
         </div>
         <div>
           <img src="/hero-img.svg" alt="" />
@@ -268,9 +268,113 @@
         </svg>
       </div>
       <span class="block mt-space-2xl text-base text-gray-100"
-        >Total: <span id="total-price" class="text-black-50">$1000</span></span
+        >Total: <span id="total-price" class="text-black-50">$0</span></span
       >
-      <button class="primary-btn mt-space-lg block">Checkout</button>
+      <button id="checkout-btn" class="primary-btn mt-space-lg block">
+        Checkout
+      </button>
+    </div>
+
+    <div
+      id="checkout-page"
+      class="hidden bg-white-50 fixed bottom-0 right-0 top-0 left-0 z-99999 md:max-w-150 max-w-100 w-full mx-auto my-20 p-space-2xl rounded-[18px] shadow-my-shadow"
+    >
+      <form class="container relative">
+        <a href="#home">
+          <img src="/apple-logo.svg" alt="" />
+        </a>
+
+        <h3
+          class="text-black-50 mt-space-base md:text-fs-3xl text-fs-2xl font-bold tracking-[-1.2px]"
+        >
+          Payment information.
+        </h3>
+        <p class="text-gray-50 text-fs-base mt-space-xs">
+          Choose your method of payment
+        </p>
+
+        <div class="mt-space-2xl border-b border-white-200">
+          <!-- Input credit card -->
+          <div class="flex flex-col mb-space-2xl">
+            <label for="card-number" class="text-black-100 text-fs-base"
+              >Credit card number</label
+            >
+            <input
+              class="border-0 bg-white-200 rounded-[18px] px-space-base py-2 outline-blue-200 text-dark-50 w-full mt-2"
+              type="text"
+              name="card-number"
+              placeholder="1234 5678 9101 2345"
+              required
+            />
+          </div>
+
+          <!-- Input expiration date -->
+          <div class="flex flex-col mb-space-2xl">
+            <label for="card-number" class="text-black-100 text-fs-base"
+              >Expiration date</label
+            >
+            <input
+              class="border-0 bg-white-200 rounded-[18px] px-space-base py-2 outline-blue-200 text-dark-50 w-full mt-2"
+              type="text"
+              name="card-number"
+              placeholder="03/24"
+              required
+            />
+          </div>
+
+          <!-- Input security code -->
+          <div class="flex flex-col mb-space-2xl">
+            <label for="card-number" class="text-black-100 text-fs-base"
+              >Security code</label
+            >
+            <input
+              class="border-0 bg-white-200 rounded-[18px] px-space-base py-2 outline-blue-200 text-dark-50 w-full mt-2"
+              type="number"
+              name="card-number"
+              placeholder="111"
+              required
+            />
+          </div>
+
+          <!-- Input security code -->
+          <div class="flex flex-col mb-space-2xl">
+            <label for="card-number" class="text-black-100 text-fs-base"
+              >Postal code</label
+            >
+            <input
+              class="border-0 bg-white-200 rounded-[18px] px-space-base py-2 outline-blue-200 text-dark-50 w-full mt-2"
+              type="number"
+              name="card-number"
+              placeholder="10119"
+              required
+            />
+          </div>
+        </div>
+        <div class="mt-space-2xl flex items-center justify-between">
+          <button type="submit" class="primary-btn">Proceed payment</button>
+          <div>
+            <span class="text-gray-50">Total:</span>
+            <span id="checkout-total" class="text-fs-base font-semibold">$0</span>
+          </div>
+          
+        </div>
+
+        <!-- Close checkout button -->
+        <svg
+          aria-label="Close menu button"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          id="close-menu"
+          class="fill-black-50 absolute top-0 right-0 cursor-pointer"
+          fill="currentColor"
+          height="32"
+          width="32"
+        >
+          <path
+            d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"
+          ></path>
+        </svg>
+      </form>
     </div>
     <footer></footer>
   </body>
